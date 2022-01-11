@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import styles from '../../styles/portfolio/portfolio.module.css'
-import wedding from '../store/wedding_page1.json'
-import bridal from '../store/bridal_page1.json'
-import nature from '../store/nature_page1.json'
-import landscape from '../store/landscape_page1.json'
-import Modal from './Modal'
+//import wedding from '../../public/store/wedding_page1.json'
+import {wedding_url} from '../store/bridal_page1'
+import Modal from '../components/Modal'
 
 
 function Portfolio() {
@@ -22,16 +20,16 @@ function Portfolio() {
             <h3>Nature</h3>
         </div>
         <div className={styles.portfolio_content1}>
-        {wedding.link.map((url) => {return <img src={url} className={styles.wedding_photo} onClick={imageSliderHandler}></img>})}
+        {wedding_url.link.map((url) => {return <img src={url} className={styles.wedding_photo} onClick={imageSliderHandler} key={url}></img>})}
         </div>
         <div className={styles.portfolio_content2}>
-        {nature.link.map((url) => {return <img src={url} className={styles.wedding_photo} onClick={imageSliderHandler}></img>})}
+        {wedding_url.link.map((url) => {return <img src={url} className={styles.wedding_photo} onClick={imageSliderHandler} key={url}></img>})}
         </div>
         <div className={styles.portfolio_content4}>
-        {landscape.link.map((url) => {return <img src={url} className={styles.wedding_photo} onClick={imageSliderHandler}></img>})}
+        {wedding_url.link.map((url) => {return <img src={url} className={styles.wedding_photo} onClick={imageSliderHandler} key={url}></img>})}
         </div>
         <div className={styles.portfolio_content3}>
-        {bridal.link.map((url) => {return <img src={url} className={styles.wedding_photo} onClick={imageSliderHandler}></img>})}
+        {wedding_url.link.map((url) => {return <img src={url} className={styles.wedding_photo} onClick={imageSliderHandler} key={url}></img>})}
         </div>
         </main>
     )

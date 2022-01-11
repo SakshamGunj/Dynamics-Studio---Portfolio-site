@@ -1,20 +1,12 @@
 import React, { useEffect } from 'react'
 import styles from '../../styles/homepage/homepage.module.css'
-import {IconContext} from 'react-icons'
-import {AiOutlineMenu} from 'react-icons/ai'
 
 function HomePage() {
-    async function fetcha(){
-        const res = await fetch('/api/server')
-        const data = await res.json()
-        console.log(data)
-    }
-    fetcha()
     return (
         <main className={styles.main}>
             <nav className={styles.top_nav}>
                 <div>
-                    <button className={styles.primary_round_button}><IconContext.Provider value={{className: styles["menusvg"]}}><AiOutlineMenu /></IconContext.Provider></button>
+                    <button className={styles.primary_round_button}></button>
                 </div>
                 <div>
                     <h3>Shashank Kumar</h3>
@@ -45,11 +37,11 @@ function HomePage() {
                 </div>
             </section>
             <section className={styles.photos}>
-                <img src = 'https://images.pexels.com/photos/1229414/pexels-photo-1229414.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' className={styles.photo1} />
-                <img src = 'https://images.pexels.com/photos/948185/pexels-photo-948185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' className={styles.photo2} />
-                <img src = 'https://images.pexels.com/photos/715546/pexels-photo-715546.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' className={styles.photo3} />
-                <img src = 'https://images.pexels.com/photos/1921168/pexels-photo-1921168.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' className={styles.photo4} />
-                <img src = 'https://images.pexels.com/photos/1172207/pexels-photo-1172207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' className={styles.photo5} />
+                <img src = 'http://images.pexels.com/photos/1229414/pexels-photo-1229414.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' className={styles.photo1} />
+                <img src = 'http://images.pexels.com/photos/948185/pexels-photo-948185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' className={styles.photo2} />
+                <img src = 'http://images.pexels.com/photos/715546/pexels-photo-715546.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' className={styles.photo3} />
+                <img src = 'http://images.pexels.com/photos/1921168/pexels-photo-1921168.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' className={styles.photo4} />
+                <img src = 'http://images.pexels.com/photos/1172207/pexels-photo-1172207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' className={styles.photo5} />
                 <img src = 'model3.jpg' className={styles.photo6} />
             </section>
             <footer className={styles.footer}>
