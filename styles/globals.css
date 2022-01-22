@@ -15,18 +15,43 @@ a {
   box-sizing: border-box;
   font-size: 62.5%;
 }
-@media only screen and (max-width:768px) {
-  *{
-    box-sizing: border-box;
-    font-size: 50.5%;
-  }
-}
-@media only screen and (max-width:578px) {
-  *{
-    box-sizing: border-box;
-    font-size: 30.5%;
-  }
-}
+
 ::-webkit-scrollbar {
-  display: none;
+  width: 0.3rem;
+  height: 0.5rem;
+  background-color: transparent;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; 
+  width: 10px;
+  height: 2rem;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255); 
+  width: 10px;
+  height: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+@media only screen and (max-width: 1024px) {
+  * {
+    box-sizing: border-box;
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 485px) {
+  * {
+    box-sizing: border-box;
+    font-size: 45%;
+  }
+}
+

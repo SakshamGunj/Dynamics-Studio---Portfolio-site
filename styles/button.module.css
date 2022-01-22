@@ -1,0 +1,16 @@
+.primary_button{
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    background-color: rgb(212, 0, 255);
+    cursor: pointer;
+    z-index: -10;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.primary_button:hover{
+    background-color: rgb(34, 34, 34);
+    color: white;
+}

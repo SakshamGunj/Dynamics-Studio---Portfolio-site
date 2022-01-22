@@ -1,20 +1,23 @@
-import React, { useEffect } from 'react'
-import styles from '../../styles/homepage/homepage.module.css'
+import React, { useEffect, useState } from 'react'
+import styles from '../../styles/homepage.module.css'
+import { MenuModal } from './Modal';
+import { PrimaryButton } from '../utilscomponents/Button';
+import { TopNav, RightNav } from './Navbar';
+import { useRouter } from 'next/router';
+import Services from './Services';
 
 function HomePage() {
+    const router = useRouter()
+    console.log(router)
+    const[openMenu, setOpenMenu] = useState(false)
+    const onGettingOpenMenuHandler = (action) => {
+        setOpenMenu(action)
+    }
     return (
-        <main className={styles.main}>
-            <nav className={styles.top_nav}>
-                <div>
-                    <button className={styles.primary_round_button}></button>
-                </div>
-                <div>
-                    <h3>Shashank Kumar</h3>
-                </div>
-                <div >
-                    <button className={styles.primary_button}>Get In Touch</button>
-                </div>
-            </nav>
+        <main className={styles[openMenu == true? 'menu_main':'main']}>
+           {openMenu && <MenuModal />}
+            <TopNav openMenu = {onGettingOpenMenuHandler} />
+            <RightNav />
             <header className={styles.header}>
              <img src='big.jpg' className={styles.large_image} />
              <div  className = {styles['header_title']}><h1>Dynami从</h1></div>
@@ -22,6 +25,8 @@ function HomePage() {
              <img src='small-removebg.png'/>
              </div>
             </header>
+            <Services />
+          
             <section className={styles.article}>
                 <div className = {styles.article_image}>
                  <img src = 'photographer2.jpg' />
@@ -36,13 +41,14 @@ function HomePage() {
                     </article>
                 </div>
             </section>
-            <section className={styles.photos}>
-                <img src = 'http://images.pexels.com/photos/1229414/pexels-photo-1229414.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' className={styles.photo1} />
-                <img src = 'http://images.pexels.com/photos/948185/pexels-photo-948185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' className={styles.photo2} />
-                <img src = 'http://images.pexels.com/photos/715546/pexels-photo-715546.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' className={styles.photo3} />
-                <img src = 'http://images.pexels.com/photos/1921168/pexels-photo-1921168.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' className={styles.photo4} />
-                <img src = 'http://images.pexels.com/photos/1172207/pexels-photo-1172207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' className={styles.photo5} />
-                <img src = 'model3.jpg' className={styles.photo6} />
+            <section  className={styles.photos}>
+                <img src = 'https://images.pexels.com/photos/1229414/pexels-photo-1229414.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' className={(styles.photo1)} />
+                <img src = 'https://images.pexels.com/photos/948185/pexels-photo-948185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' className={(styles.photo2)} />
+                <img src = 'https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260' className={(styles.photo3)} />
+                <img src = 'https://images.pexels.com/photos/1921168/pexels-photo-1921168.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' className={(styles.photo4)} />
+                <img src = 'https://images.pexels.com/photos/1172207/pexels-photo-1172207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' className={(styles.photo5)} />
+                <img src = 'model3.jpg' className={(styles.photo6)} />
+                <button className={styles.portfolio_button}>View Portfolio</button>
             </section>
             <footer className={styles.footer}>
                 <h2 className={styles.footer_email}>shashankumar@gmail.com</h2>
