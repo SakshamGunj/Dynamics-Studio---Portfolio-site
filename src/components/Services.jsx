@@ -16,6 +16,7 @@ function Card({image, heading, subheading, description, key, link}){
          </div>
          <div className = {styles.card_content}>
          <h3>{description}</h3>
+         <h2>Explore Work</h2>
          </div>
         </div>
         </Link>

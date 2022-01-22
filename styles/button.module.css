@@ -3,7 +3,7 @@
     border: none;
     border-radius: 3rem;
     font-size: 1.5rem;
-    background-color: rgb(212, 0, 255);
+    background-color: rgb(255, 255, 255);
     cursor: pointer;
     z-index: -10;
     transition: .3s;

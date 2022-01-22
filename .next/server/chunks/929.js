@@ -240,11 +240,6 @@ function TopNav(props) {
                     })
                 })
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                    children: "Shashank kumar"
-                })
-            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_utilscomponents_Button__WEBPACK_IMPORTED_MODULE_2__/* .PrimaryButton */ .K, {
                 content: "Get in touch"
             })
@@ -258,7 +253,7 @@ function RightNav() {
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_4___default()), {
                 style: {
                     fontSize: '3.5rem',
-                    fill: 'white'
+                    fill: 'rgb(212, 0, 255)'
                 }
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_5___default()), {
@@ -270,7 +265,7 @@ function RightNav() {
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_material_ui_icons_Twitter__WEBPACK_IMPORTED_MODULE_6___default()), {
                 style: {
                     fontSize: '3.5rem',
-                    fill: 'white'
+                    fill: 'rgb(212, 0, 255)'
                 }
             })
         ]

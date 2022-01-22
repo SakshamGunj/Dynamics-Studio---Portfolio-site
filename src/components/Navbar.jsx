@@ -18,9 +18,6 @@ export function TopNav(props){
         <div>
             <button className={styles['primary_round_button']} onClick={menuOpenHandler}><MenuIcon style={{fontSize: '3rem', }} /></button>
         </div>
-        <div>
-            <h3>Shashank kumar</h3>
-        </div>
          <PrimaryButton content='Get in touch' />
     </nav>
     )
@@ -29,9 +26,9 @@ export function TopNav(props){
 export function RightNav(){
     return(
         <nav className = {styles.right_nav}>
-        <InstagramIcon style = {{fontSize: '3.5rem', fill: 'white'}} />
+        <InstagramIcon style = {{fontSize: '3.5rem', fill: 'rgb(212, 0, 255)'}} />
         <FacebookIcon style = {{fontSize: '3.5rem', fill: 'rgb(212, 0, 255)'}} />
-        <TwitterIcon style = {{fontSize: '3.5rem', fill: 'white'}} />
+        <TwitterIcon style = {{fontSize: '3.5rem', fill: 'rgb(212, 0, 255)'}} />
        </nav>
     )
 }
