@@ -485,6 +485,7 @@
         color: white;
         font-size: 10rem;
         place-self: center;
+        font-weight: bolder;
     }
     .footer_email{
         color: white;

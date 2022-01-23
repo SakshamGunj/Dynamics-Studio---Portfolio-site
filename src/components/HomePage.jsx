@@ -5,18 +5,20 @@ import { PrimaryButton } from '../utilscomponents/Button';
 import { TopNav, RightNav } from './Navbar';
 import { useRouter } from 'next/router';
 import Services from './Services';
+import Sidebar from './sidebar';
 
 function HomePage() {
     const router = useRouter()
     console.log(router)
-    const[openMenu, setOpenMenu] = useState(false)
+    const[openMenu, setOpenMenu] = useState()
     const onGettingOpenMenuHandler = (action) => {
+        console.log(action)
         setOpenMenu(action)
     }
     return (
         <main className={styles[openMenu == true? 'menu_main':'main']}>
            {openMenu && <MenuModal />}
-            <TopNav openMenu = {onGettingOpenMenuHandler} />
+            <TopNav OpenMenu = {onGettingOpenMenuHandler} />
             <RightNav />
             <header className={styles.header}>
              <img src='big.jpg' className={styles.large_image} />
