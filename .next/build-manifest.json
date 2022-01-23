@@ -1,53 +1,55 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills-5cd94c89d3acac5f.js"
+    "static/chunks/polyfills-a98cee78eb8282e29fb6.js"
   ],
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/PiXHvExEcwoVb7p2-NA82/_buildManifest.js",
-    "static/PiXHvExEcwoVb7p2-NA82/_ssgManifest.js",
-    "static/PiXHvExEcwoVb7p2-NA82/_middlewareManifest.js"
+    "static/GmJsE-N7L9xG9X8bet4uF/_buildManifest.js",
+    "static/GmJsE-N7L9xG9X8bet4uF/_ssgManifest.js"
   ],
   "pages": {
     "/": [
-      "static/chunks/webpack-514908bffb652963.js",
-      "static/chunks/framework-6e4ba497ae0c8a3f.js",
-      "static/chunks/main-deb592798b94b511.js",
-      "static/chunks/542-e491a7b5fc82f159.js",
-      "static/css/10266f2f87a22ccc.css",
-      "static/chunks/pages/index-6f39bd2f5eb4cb2f.js"
+      "static/chunks/main-ffbcc33e6da263d6bd0c.js",
+      "static/chunks/webpack-e067438c4cf4ef2ef178.js",
+      "static/chunks/framework.39c35541920c061ce016.js",
+      "static/chunks/commons.9048581c5465e683d915.js",
+      "static/chunks/9978894044ec242d437efe2ca23e9b289fdf6a04.822d6a3f556673437bb8.js",
+      "static/css/ee28577d20bfe02aac95.css",
+      "static/chunks/pages/index-c89dbdaaaf9c6dea21d2.js"
     ],
     "/_app": [
-      "static/chunks/webpack-514908bffb652963.js",
-      "static/chunks/framework-6e4ba497ae0c8a3f.js",
-      "static/chunks/main-deb592798b94b511.js",
-      "static/css/7e2a54d34b8a9456.css",
-      "static/chunks/pages/_app-9cd1d19dd7237c4c.js"
+      "static/chunks/main-ffbcc33e6da263d6bd0c.js",
+      "static/chunks/webpack-e067438c4cf4ef2ef178.js",
+      "static/chunks/framework.39c35541920c061ce016.js",
+      "static/chunks/commons.9048581c5465e683d915.js",
+      "static/css/6a379e291f85b810e083.css",
+      "static/chunks/pages/_app-0226996e76a933f47510.js"
     ],
     "/_error": [
-      "static/chunks/webpack-514908bffb652963.js",
-      "static/chunks/framework-6e4ba497ae0c8a3f.js",
-      "static/chunks/main-deb592798b94b511.js",
-      "static/chunks/pages/_error-2280fa386d040b66.js"
+      "static/chunks/main-ffbcc33e6da263d6bd0c.js",
+      "static/chunks/webpack-e067438c4cf4ef2ef178.js",
+      "static/chunks/framework.39c35541920c061ce016.js",
+      "static/chunks/commons.9048581c5465e683d915.js",
+      "static/chunks/pages/_error-303f7feba0531063ad5f.js"
     ],
-    "/portfolio": [
-      "static/chunks/webpack-514908bffb652963.js",
-      "static/chunks/framework-6e4ba497ae0c8a3f.js",
-      "static/chunks/main-deb592798b94b511.js",
-      "static/chunks/542-e491a7b5fc82f159.js",
-      "static/chunks/122-d8a1767e23752989.js",
-      "static/css/2f0ca4f0656b0c1f.css",
-      "static/chunks/pages/portfolio-68bfab1ea885dc27.js"
+    "/portfoliowork": [
+      "static/chunks/main-ffbcc33e6da263d6bd0c.js",
+      "static/chunks/webpack-e067438c4cf4ef2ef178.js",
+      "static/chunks/framework.39c35541920c061ce016.js",
+      "static/chunks/commons.9048581c5465e683d915.js",
+      "static/chunks/9978894044ec242d437efe2ca23e9b289fdf6a04.822d6a3f556673437bb8.js",
+      "static/css/55d0b7bae4245707d116.css",
+      "static/chunks/pages/portfoliowork-47e1f811cc18609cdfa8.js"
     ],
-    "/portfolio/[portfolio]": [
-      "static/chunks/webpack-514908bffb652963.js",
-      "static/chunks/framework-6e4ba497ae0c8a3f.js",
-      "static/chunks/main-deb592798b94b511.js",
-      "static/chunks/542-e491a7b5fc82f159.js",
-      "static/chunks/122-d8a1767e23752989.js",
-      "static/css/2f0ca4f0656b0c1f.css",
-      "static/chunks/pages/portfolio/[portfolio]-80407d0a20bcb5ad.js"
+    "/portfoliowork/indoor": [
+      "static/chunks/main-ffbcc33e6da263d6bd0c.js",
+      "static/chunks/webpack-e067438c4cf4ef2ef178.js",
+      "static/chunks/framework.39c35541920c061ce016.js",
+      "static/chunks/commons.9048581c5465e683d915.js",
+      "static/chunks/9978894044ec242d437efe2ca23e9b289fdf6a04.822d6a3f556673437bb8.js",
+      "static/css/55d0b7bae4245707d116.css",
+      "static/chunks/pages/portfoliowork/indoor-aaff43698e00442ece2a.js"
     ]
   },
   "ampFirstPages": []

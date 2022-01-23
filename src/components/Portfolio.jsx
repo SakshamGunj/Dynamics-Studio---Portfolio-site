@@ -7,7 +7,7 @@ import { wedding_url, model_url, nature_url, portrait_url } from '../store/brida
 
 
 
-function Portfolio({query}) {
+function Portfolio({query, weddingurl, natureurl}) {
     const imageZoomHandler = (e) => {
         console.log(e.target.currentSrc)
     }
@@ -47,13 +47,13 @@ function Portfolio({query}) {
          {wedding_url.link.map((u) => {return <img src = {u} className={styles.portfolio_image} onClick={imageZoomHandler}></img>})}
         </div>
         <div className={styles.portfolio_content2}>
-         {nature_url.link.map((u) => {return <img src = {u} className={styles.portfolio_image} onClick={imageZoomHandler}></img>})}
+         {wedding_url.link.map((u) => {return <img src = {u} className={styles.portfolio_image} onClick={imageZoomHandler}></img>})}
         </div>
         <div className={styles.portfolio_content3}>
          {wedding_url.link.map((u) => {return <img src = {u} className={styles.portfolio_image} onClick={imageZoomHandler}></img>})}
         </div>
         <div className={styles.portfolio_content4}>
-         {nature_url.link.map((u) => {return <img src = {u} className={styles.portfolio_image} onClick={imageZoomHandler}></img>})}
+         {wedding_url.link.map((u) => {return <img src = {u} className={styles.portfolio_image} onClick={imageZoomHandler}></img>})}
         </div>
         </main>
     )

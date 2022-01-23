@@ -1,8 +1,9 @@
 {
   "/_app": "pages/_app.js",
+  "/api/images": "pages/api/images.js",
   "/": "pages/index.js",
-  "/portfolio/[portfolio]": "pages/portfolio/[portfolio].html",
-  "/portfolio": "pages/portfolio.html",
+  "/portfoliowork": "pages/portfoliowork.html",
+  "/portfoliowork/indoor": "pages/portfoliowork/indoor.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"

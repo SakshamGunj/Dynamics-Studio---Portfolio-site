@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from 'react';\nimport HomePage from '../src/components/HomePage';\nimport { jsx as _jsx } from \"react/jsx-runtime\";\n\nfunction index() {\n  return /*#__PURE__*/_jsx(HomePage, {});\n}\n\nexport var __N_SSG = true;\nexport default index;","map":null,"metadata":{},"sourceType":"module"}

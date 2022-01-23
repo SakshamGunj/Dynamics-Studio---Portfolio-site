@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { wedding_url } from \"../../src/store/bridal_page1\";\nexport default ((req, res) => {\n  res.json(wedding_url.link);\n});","map":null,"metadata":{},"sourceType":"module"}

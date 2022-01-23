@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from 'react';\nimport Portfolio from '../../src/components/Portfolio';\nimport { jsx as _jsx } from \"react/jsx-runtime\";\n\nfunction index() {\n  return /*#__PURE__*/_jsx(Portfolio, {});\n}\n\nexport default index;","map":null,"metadata":{},"sourceType":"module"}
