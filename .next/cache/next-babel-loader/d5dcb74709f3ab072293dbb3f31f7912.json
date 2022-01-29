@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from 'react';\nimport { Portfolio } from '../../src/components/IndoorPortfolio';\nimport { jsx as _jsx } from \"react/jsx-runtime\";\n\nfunction index(props) {\n  return /*#__PURE__*/_jsx(Portfolio, {\n    dataa: props.data\n  });\n}\n\nexport var __N_SSG = true;\nexport default index;","map":null,"metadata":{},"sourceType":"module"}

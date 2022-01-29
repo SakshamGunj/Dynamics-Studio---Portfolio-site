@@ -645,9 +645,9 @@ function MenuModal() {
           children: "HomePage"
         })
       }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-        href: "/portfolio",
+        href: "/portfoliowork",
         children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])("h1", {
-          className: _styles_modal_module_css__WEBPACK_IMPORTED_MODULE_1___default.a[router.pathname == '/portfolio' && 'link'],
+          className: _styles_modal_module_css__WEBPACK_IMPORTED_MODULE_1___default.a[router.pathname == '/portfoliowork' && 'link'],
           children: "Portfolio"
         })
       }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -661,17 +661,22 @@ function MenuModal() {
       children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
         href: "/",
         children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])("h2", {
-          children: "Wedding work --"
+          children: "Wedding work"
         })
       }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
         href: "/portfolio",
         children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])("h2", {
-          children: "Wedding work --"
+          children: "indoor work"
         })
       }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
         href: "/",
         children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])("h2", {
-          children: "Wedding work --"
+          children: "commercial work"
+        })
+      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+        href: "/",
+        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])("h2", {
+          children: "product work"
         })
       })]
     })]
@@ -825,13 +830,13 @@ function Services() {
     }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
       className: services_module_default.a.servicesCard,
       children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(Card, {
-        link: "/portfolio/wedding",
+        link: "/portfoliowork/wedding",
         image: "model1.jpg",
         heading: "emotion captured in time",
         subheading: "Wedding Photography",
         description: "Marriage is one of the most important and emotional events in our life. Therefore, choosing a photographer for this purpose should be approached very responsibly. I have a lot of experience to working on weddings and don't miss anything.\r\n"
       }, '1'), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Card, {
-        link: "/portfolio/commercial",
+        link: "/portfoliowork/commercial",
         image: "photographer1.jpg",
         heading: "help selling something",
         subheading: "Commercial works",
@@ -843,7 +848,7 @@ function Services() {
         subheading: "Indoor photography",
         description: "If you are a beginner model and you do not have portfolio of enough quality so this service is for you. Together we can create you professional models portfolio. The work takes place both in the studio and in nature, depending on the wishes of the client."
       }, '3'), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Card, {
-        link: "/portfolio/product",
+        link: "/portfoliowork/product",
         image: "big.jpg",
         heading: "products too have memories",
         subheading: "Product Photography",
@@ -974,7 +979,11 @@ function Sidebar() {
 
 function HomePage() {
   const router = Object(router_["useRouter"])();
-  console.log(router);
+
+  const onOpenPortfolioHandler = () => {
+    router.push('/portfoliowork');
+  };
+
   const {
     0: openMenu,
     1: setOpenMenu
@@ -997,7 +1006,7 @@ function HomePage() {
       }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
         className: homepage_module_default.a['header_title'],
         children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("h1", {
-          children: "Dynami\u4ECE"
+          children: "Dynamic"
         })
       }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
         className: homepage_module_default.a['small_image'],
@@ -1054,6 +1063,7 @@ function HomePage() {
         src: "model3.jpg",
         className: homepage_module_default.a.photo6
       }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("button", {
+        onClick: onOpenPortfolioHandler,
         className: homepage_module_default.a.portfolio_button,
         children: "View Portfolio"
       })]
@@ -1073,7 +1083,13 @@ function HomePage() {
 }
 
 /* harmony default export */ var components_HomePage = (HomePage);
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__("xnum");
+
 // CONCATENATED MODULE: ./pages/index.js
+
+
+
 
 
 
@@ -1086,7 +1102,21 @@ const getStaticProps = async () => {
 };
 
 function pages_index() {
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])(components_HomePage, {});
+  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])(jsx_runtime_["Fragment"], {
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("head", {
+      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("meta", {
+        charset: "UTF-8"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("meta", {
+        "http-equiv": "X-UA-Compatible",
+        content: "IE=edge"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("meta", {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1.0"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("title", {
+        children: "Homepage"
+      })]
+    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(components_HomePage, {})]
+  });
 }
 
 /* harmony default export */ var pages = __webpack_exports__["default"] = (pages_index);
@@ -2995,6 +3025,13 @@ module.exports = require("@mui/material/ListItem");
 "use strict";
 exports.__esModule=true;exports.normalizePathSep=normalizePathSep;exports.denormalizePagePath=denormalizePagePath;function normalizePathSep(path){return path.replace(/\\/g,'/');}function denormalizePagePath(page){page=normalizePathSep(page);if(page.startsWith('/index/')){page=page.slice(6);}else if(page==='/index'){page='/';}return page;}
 //# sourceMappingURL=denormalize-page-path.js.map
+
+/***/ }),
+
+/***/ "xnum":
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 

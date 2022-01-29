@@ -6,6 +6,11 @@
     position: relative;
     overflow-x: hidden;
 }
+.modal_main{
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
 
 .portfolio_heading{
     grid-row: 1/2;

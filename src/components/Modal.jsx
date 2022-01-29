@@ -12,13 +12,14 @@ export function MenuModal(){
          <img src='footer.jpg'></img>
          <div className={styles.menu_modal_content}>
              <Link href='/'><h1>HomePage</h1></Link>
-             <Link href='/portfolio'><h1 className={styles[router.pathname == '/portfolio' && 'link']}>Portfolio</h1></Link>
+             <Link href='/portfoliowork'><h1 className={styles[router.pathname == '/portfoliowork' && 'link']}>Portfolio</h1></Link>
              <Link href='/'><h1>Contact</h1></Link>
          </div>
          <div className={styles.menu_modal_content2}>
-             <Link href='/'><h2>Wedding work --</h2></Link>
-             <Link href='/portfolio'><h2>Wedding work --</h2></Link>
-             <Link href='/'><h2>Wedding work --</h2></Link>
+             <Link href='/'><h2>Wedding work</h2></Link>
+             <Link href='/portfolio'><h2>indoor work</h2></Link>
+             <Link href='/'><h2>commercial work</h2></Link>
+             <Link href='/'><h2>product work</h2></Link>
          </div>
         </div>
     )

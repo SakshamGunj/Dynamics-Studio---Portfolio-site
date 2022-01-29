@@ -9,7 +9,9 @@ import Sidebar from './sidebar';
 
 function HomePage() {
     const router = useRouter()
-    console.log(router)
+    const onOpenPortfolioHandler = () => {
+        router.push('/portfoliowork')
+    }
     const[openMenu, setOpenMenu] = useState()
     const onGettingOpenMenuHandler = (action) => {
         console.log(action)
@@ -22,7 +24,7 @@ function HomePage() {
             <RightNav />
             <header className={styles.header}>
              <img src='big.jpg' className={styles.large_image} />
-             <div  className = {styles['header_title']}><h1>Dynami从</h1></div>
+             <div  className = {styles['header_title']}><h1>Dynamic</h1></div>
              <div  className={styles['small_image']}>
              <img src='small-removebg.png'/>
              </div>
@@ -50,7 +52,7 @@ function HomePage() {
                 <img src = 'https://images.pexels.com/photos/1921168/pexels-photo-1921168.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260' className={(styles.photo4)} />
                 <img src = 'https://images.pexels.com/photos/1172207/pexels-photo-1172207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' className={(styles.photo5)} />
                 <img src = 'model3.jpg' className={(styles.photo6)} />
-                <button className={styles.portfolio_button}>View Portfolio</button>
+                <button onClick={onOpenPortfolioHandler} className={styles.portfolio_button}>View Portfolio</button>
             </section>
             <footer className={styles.footer}>
                 <h2 className={styles.footer_email}>shashankumar@gmail.com</h2>

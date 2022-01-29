@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -203,14 +203,6 @@ function assign(target, ...searchParamsList) {
   });
   return target;
 }
-
-/***/ }),
-
-/***/ 4:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("ZmJ7");
-
 
 /***/ }),
 
@@ -335,6 +327,14 @@ module.exports = require("next/router");
 
 /***/ }),
 
+/***/ 5:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("ZmJ7");
+
+
+/***/ }),
+
 /***/ "5Eds":
 /***/ (function(module, exports) {
 
@@ -355,6 +355,7 @@ module.exports = {
 // Exports
 module.exports = {
 	"main": "portfolio_main__1z6eQ",
+	"modal_main": "portfolio_modal_main__D3GBn",
 	"portfolio_heading": "portfolio_portfolio_heading__2_-Fm",
 	"wedding_options": "portfolio_wedding_options__2zwen",
 	"portfolio_content1": "portfolio_portfolio_content1__i_iG5",
@@ -649,9 +650,9 @@ function MenuModal() {
           children: "HomePage"
         })
       }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-        href: "/portfolio",
+        href: "/portfoliowork",
         children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])("h1", {
-          className: _styles_modal_module_css__WEBPACK_IMPORTED_MODULE_1___default.a[router.pathname == '/portfolio' && 'link'],
+          className: _styles_modal_module_css__WEBPACK_IMPORTED_MODULE_1___default.a[router.pathname == '/portfoliowork' && 'link'],
           children: "Portfolio"
         })
       }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -665,17 +666,22 @@ function MenuModal() {
       children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
         href: "/",
         children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])("h2", {
-          children: "Wedding work --"
+          children: "Wedding work"
         })
       }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
         href: "/portfolio",
         children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])("h2", {
-          children: "Wedding work --"
+          children: "indoor work"
         })
       }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
         href: "/",
         children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])("h2", {
-          children: "Wedding work --"
+          children: "commercial work"
+        })
+      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+        href: "/",
+        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])("h2", {
+          children: "product work"
         })
       })]
     })]
@@ -874,171 +880,38 @@ module.exports = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, "indoor", function() { return /* binding */ indoor; });
-__webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return /* binding */ getStaticProps; });
-
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__("cDcd");
-
-// EXTERNAL MODULE: ./styles/portfolio.module.css
-var portfolio_module = __webpack_require__("6Atl");
-var portfolio_module_default = /*#__PURE__*/__webpack_require__.n(portfolio_module);
-
-// EXTERNAL MODULE: ./src/components/Navbar.jsx
-var Navbar = __webpack_require__("48OU");
-
-// EXTERNAL MODULE: ./src/components/Modal.jsx
-var Modal = __webpack_require__("JER/");
-
-// EXTERNAL MODULE: ./src/store/bridal_page1.js
-var bridal_page1 = __webpack_require__("eNEt");
-
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__("F5FC");
-
-// CONCATENATED MODULE: ./src/components/IndoorPortfolio.jsx
-
- //import wedding from '../../public/store/wedding_page1.json'
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "indoor", function() { return indoor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _src_store_bridal_page1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("eNEt");
+/* harmony import */ var _src_components_IndoorPortfolio__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("y1nx");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("xnum");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("F5FC");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
 
 
-
-
-
-
-
-function IndoorPortfolio({
-  query,
-  weddingurl,
-  natureurl,
-  dataa
-}) {
-  console.log(dataa);
-
-  const imageZoomHandler = e => {
-    console.log(e.target.currentSrc);
-  };
-
-  const {
-    0: portfolioOption,
-    1: setPortfolioOption
-  } = Object(external_react_["useState"])('ALL');
-  const {
-    0: menu,
-    1: openMenu
-  } = Object(external_react_["useState"])(false);
-
-  const imageSliderHandler = () => {
-    console.log('slided');
-  };
-
-  const onGettingPortfolioOptionHandler = option => {
-    setPortfolioOption(option);
-  };
-
-  const onGettingOpenMenuHandler = action => {
-    openMenu(action);
-  };
-
-  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("main", {
-    className: portfolio_module_default.a.main,
-    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(Navbar["b" /* TopNav */], {
-      openMenu: onGettingOpenMenuHandler
-    }), menu && /*#__PURE__*/Object(jsx_runtime_["jsx"])(Modal["a" /* MenuModal */], {}), query == 'indoor' && /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      className: portfolio_module_default.a.portfolio_heading,
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("h2", {
-        children: "indoor"
-      }, 'Indoor')
-    }), query == 'commercial' && /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      className: portfolio_module_default.a.portfolio_heading,
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("h2", {
-        children: "commercial"
-      }, 'Commercial')
-    }), query == 'product' && /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      className: portfolio_module_default.a.portfolio_heading,
-      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("h2", {
-        children: "product"
-      }, 'Product')
-    }), query == 'wedding' && /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-      className: portfolio_module_default.a.portfolio_heading,
-      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h2", {
-        children: "wedding"
-      }, 'Wedding'), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-        className: portfolio_module_default.a.wedding_options,
-        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("h3", {
-          children: "Pre wedding"
-        }, 'weeding'), /*#__PURE__*/Object(jsx_runtime_["jsx"])("h3", {
-          children: "Haldi"
-        }, 'model'), /*#__PURE__*/Object(jsx_runtime_["jsx"])("h3", {
-          children: "Mandap"
-        }, 'nature')]
-      })]
-    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      className: portfolio_module_default.a.portfolio_content1,
-      children: dataa.map(u => {
-        return /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-          src: u,
-          className: portfolio_module_default.a.portfolio_image,
-          onClick: imageZoomHandler
-        });
-      })
-    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      className: portfolio_module_default.a.portfolio_content2,
-      children: dataa.map(u => {
-        return /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-          src: u,
-          className: portfolio_module_default.a.portfolio_image,
-          onClick: imageZoomHandler
-        });
-      })
-    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      className: portfolio_module_default.a.portfolio_content3,
-      children: dataa.map(u => {
-        return /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-          src: u,
-          className: portfolio_module_default.a.portfolio_image,
-          onClick: imageZoomHandler
-        });
-      })
-    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
-      className: portfolio_module_default.a.portfolio_content4,
-      children: dataa.map(u => {
-        return /*#__PURE__*/Object(jsx_runtime_["jsx"])("img", {
-          src: u,
-          className: portfolio_module_default.a.portfolio_image,
-          onClick: imageZoomHandler
-        });
-      })
-    })]
-  });
-}
-
-/* harmony default export */ var components_IndoorPortfolio = (IndoorPortfolio);
-// CONCATENATED MODULE: ./pages/portfoliowork/indoor.js
 
 
 
 function indoor({
   data
 }) {
-  return /*#__PURE__*/Object(jsx_runtime_["jsx"])(components_IndoorPortfolio, {
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__["jsx"])(_src_components_IndoorPortfolio__WEBPACK_IMPORTED_MODULE_2__[/* IndoorPortfolio */ "b"], {
     dataa: data
   });
 }
-async function getStaticProps({
-  req
-}) {
-  const data = ['hello.jpg'];
+async function getStaticProps() {
+  const data = _src_store_bridal_page1__WEBPACK_IMPORTED_MODULE_1__[/* wedding_url */ "a"].link;
   return {
     props: {
       data
     }
   };
 }
-/* harmony default export */ var portfoliowork_indoor = __webpack_exports__["default"] = (indoor);
+/* harmony default export */ __webpack_exports__["default"] = (indoor);
 
 /***/ }),
 
@@ -2737,6 +2610,365 @@ module.exports = require("@material-ui/icons/Twitter");
 "use strict";
 exports.__esModule=true;exports.normalizePathSep=normalizePathSep;exports.denormalizePagePath=denormalizePagePath;function normalizePathSep(path){return path.replace(/\\/g,'/');}function denormalizePagePath(page){page=normalizePathSep(page);if(page.startsWith('/index/')){page=page.slice(6);}else if(page==='/index'){page='/';}return page;}
 //# sourceMappingURL=denormalize-page-path.js.map
+
+/***/ }),
+
+/***/ "xnum":
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "y1nx":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return IndoorPortfolio; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return WeddingPortfolio; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommercialPortfolio; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return ProductPortfolio; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Portfolio; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("6Atl");
+/* harmony import */ var _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("48OU");
+/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("JER/");
+/* harmony import */ var _store_bridal_page1__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("eNEt");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("F5FC");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__);
+
+ //import wedding from '../../public/store/wedding_page1.json'
+
+
+
+
+
+
+
+function IndoorPortfolio({
+  query,
+  weddingurl,
+  natureurl,
+  dataa
+}) {
+  const {
+    0: openMenu,
+    1: setOpenMenu
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
+
+  const onGettingOpenMenuHandler = action => {
+    console.log(action);
+    setOpenMenu(action);
+  };
+
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["Fragment"], {
+    children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxs"])("main", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a[openMenu ? 'modal_main' : 'main'],
+      children: [openMenu && /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])(_Modal__WEBPACK_IMPORTED_MODULE_3__[/* MenuModal */ "a"], {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])(_Navbar__WEBPACK_IMPORTED_MODULE_2__[/* TopNav */ "b"], {
+        OpenMenu: onGettingOpenMenuHandler
+      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+        className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_heading,
+        children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h2", {
+          children: "indoor"
+        }, 'Indoor')
+      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+        className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content1,
+        children: dataa.map(u => {
+          return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+            src: u,
+            className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+          });
+        })
+      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+        className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content2,
+        children: dataa.map(u => {
+          return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+            src: u,
+            className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+          });
+        })
+      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+        className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content3,
+        children: dataa.map(u => {
+          return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+            src: u,
+            className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+          });
+        })
+      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+        className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content4,
+        children: dataa.map(u => {
+          return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+            src: u,
+            className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+          });
+        })
+      })]
+    })
+  });
+}
+function WeddingPortfolio({
+  query,
+  weddingurl,
+  natureurl,
+  dataa
+}) {
+  const {
+    0: openMenu,
+    1: setOpenMenu
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
+
+  const onGettingOpenMenuHandler = action => {
+    console.log(action);
+    setOpenMenu(action);
+  };
+
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxs"])("main", {
+    className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.main,
+    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])(_Navbar__WEBPACK_IMPORTED_MODULE_2__[/* TopNav */ "b"], {
+      OpenMenu: onGettingOpenMenuHandler
+    }), openMenu && /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])(_Modal__WEBPACK_IMPORTED_MODULE_3__[/* MenuModal */ "a"], {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxs"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_heading,
+      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h2", {
+        children: "wedding"
+      }, 'Wedding'), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxs"])("div", {
+        className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.wedding_options,
+        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h3", {
+          children: "Pre wedding"
+        }, 'weeding'), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h3", {
+          children: "Haldi"
+        }, 'model'), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h3", {
+          children: "Mandap"
+        }, 'nature')]
+      })]
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content1,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content2,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content3,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content4,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    })]
+  });
+}
+function CommercialPortfolio({
+  query,
+  weddingurl,
+  natureurl,
+  dataa
+}) {
+  const {
+    0: openMenu,
+    1: setOpenMenu
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
+
+  const onGettingOpenMenuHandler = action => {
+    console.log(action);
+    setOpenMenu(action);
+  };
+
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxs"])("main", {
+    className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.main,
+    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])(_Navbar__WEBPACK_IMPORTED_MODULE_2__[/* TopNav */ "b"], {
+      OpenMenu: onGettingOpenMenuHandler
+    }), openMenu && /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])(_Modal__WEBPACK_IMPORTED_MODULE_3__[/* MenuModal */ "a"], {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_heading,
+      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h2", {
+        children: "commercial"
+      }, 'Indoor')
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content1,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content2,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content3,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content4,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    })]
+  });
+}
+function ProductPortfolio({
+  query,
+  weddingurl,
+  natureurl,
+  dataa
+}) {
+  const {
+    0: openMenu,
+    1: setOpenMenu
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
+
+  const onGettingOpenMenuHandler = action => {
+    console.log(action);
+    setOpenMenu(action);
+  };
+
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxs"])("main", {
+    className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.main,
+    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])(_Navbar__WEBPACK_IMPORTED_MODULE_2__[/* TopNav */ "b"], {
+      OpenMenu: onGettingOpenMenuHandler
+    }), openMenu && /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])(_Modal__WEBPACK_IMPORTED_MODULE_3__[/* MenuModal */ "a"], {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_heading,
+      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h2", {
+        children: "product"
+      }, 'Indoor')
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content1,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content2,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content3,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content4,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    })]
+  });
+}
+function Portfolio({
+  query,
+  weddingurl,
+  natureurl,
+  dataa
+}) {
+  const {
+    0: openMenu,
+    1: setOpenMenu
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
+
+  const onGettingOpenMenuHandler = action => {
+    console.log(action);
+    setOpenMenu(action);
+  };
+
+  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxs"])("main", {
+    className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.main,
+    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])(_Navbar__WEBPACK_IMPORTED_MODULE_2__[/* TopNav */ "b"], {
+      OpenMenu: onGettingOpenMenuHandler
+    }), openMenu && /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])(_Modal__WEBPACK_IMPORTED_MODULE_3__[/* MenuModal */ "a"], {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxs"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_heading,
+      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h2", {
+        children: "portfolio"
+      }, 'Wedding'), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsxs"])("div", {
+        className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.wedding_options,
+        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h3", {
+          children: "wedding"
+        }, 'weeding'), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h3", {
+          children: "indoor"
+        }, 'model'), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h3", {
+          children: "commercial"
+        }, 'nature'), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h3", {
+          children: "personal"
+        }, 'nature')]
+      })]
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content1,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content2,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content3,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("div", {
+      className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_content4,
+      children: dataa.map(u => {
+        return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+          src: u,
+          className: _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.portfolio_image
+        });
+      })
+    })]
+  });
+}
 
 /***/ }),
 
