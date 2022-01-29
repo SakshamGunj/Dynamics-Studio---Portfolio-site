@@ -3,7 +3,7 @@
 .menu_modal{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to right bottom, #001c6d, #1c1452, #1e0e39, #1a0824, #0d0010);
+    background-image: linear-gradient(to bottom, #051937, #0f172d, #131523, #13131a, #111111);
     z-index: 1000;
     position: absolute;
     top: 0;
@@ -66,8 +66,32 @@
     z-index: 10000;
     display: flex;
     flex-direction: column;
+    row-gap: 0rem;
     column-gap: 6rem;
     place-self: center;
+    margin-top: -30rem;
     overflow-x: hidden;
+    text-align: center;
   }
+  .menu_modal_content2{
+    z-index: 10000;
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+    flex-direction: column;
+    display: flex;
+    column-gap: 4rem;
+    margin-top: -10rem;
+    place-items: center;
+    overflow-x: hidden;
+    text-align: center;
+    
+  }
+  .menu_modal_content2 h2{
+    color: gray;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+  @media 
 }

@@ -16,10 +16,10 @@ export function MenuModal(){
              <Link href='/'><h1>Contact</h1></Link>
          </div>
          <div className={styles.menu_modal_content2}>
-             <Link href='/'><h2>Wedding work</h2></Link>
-             <Link href='/portfolio'><h2>indoor work</h2></Link>
-             <Link href='/'><h2>commercial work</h2></Link>
-             <Link href='/'><h2>product work</h2></Link>
+             <Link href='/'><h2>Wedding work ↗</h2></Link>
+             <Link href='/portfolio'><h2>indoor work ↗</h2></Link>
+             <Link href='/'><h2>commercial work ↗</h2></Link>
+             <Link href='/'><h2>product work ↗</h2></Link>
          </div>
         </div>
     )

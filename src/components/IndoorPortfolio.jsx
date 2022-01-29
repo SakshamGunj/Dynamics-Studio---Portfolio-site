@@ -143,7 +143,6 @@ export function Portfolio({query, weddingurl, natureurl, dataa}) {
             <h3  key='weeding'>wedding</h3>
             <h3  key='model'>indoor</h3>
             <h3  key='nature'>commercial</h3>
-            <h3  key='nature'>personal</h3>
             </div>
         </div>
         <div className={styles.portfolio_content1}>
