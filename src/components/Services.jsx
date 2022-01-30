@@ -12,7 +12,7 @@ function Card({image, heading, subheading, description, key, link}){
     }, [])
     return(
         <Link href={link} >
-        <div className={styles.card} key={key} data-aos = "fade-right">
+        <div className={styles.card} key={key} >
          <div className={styles.card_image}>
          <img src = {image}></img>
          </div>

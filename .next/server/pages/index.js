@@ -120,7 +120,6 @@ function Card({ image , heading , subheading , description , key , link  }) {
         href: link,
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: (services_module_default()).card,
-            "data-aos": "fade-right",
             children: [
                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                     className: (services_module_default()).card_image,
@@ -384,7 +383,6 @@ function HomePage() {
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: (homepage_module_default()).header_title,
                         children: /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                            "data-aos": "fade-up",
                             children: "Dynamic"
                         })
                     }),
@@ -410,7 +408,6 @@ function HomePage() {
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: (homepage_module_default()).article_content,
                         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("article", {
-                            "data-aos": "fade-up",
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
                                     className: (homepage_module_default()).article_bold,
@@ -439,7 +436,6 @@ function HomePage() {
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
                 className: (homepage_module_default()).photos,
-                "data-aos": "fade-up",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("img", {
                         src: "https://images.pexels.com/photos/1229414/pexels-photo-1229414.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
@@ -466,7 +462,6 @@ function HomePage() {
                         className: (homepage_module_default()).photo6
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("button", {
-                        "data-aos": "fade-up",
                         onClick: onOpenPortfolioHandler,
                         className: (homepage_module_default()).portfolio_button,
                         children: "View Portfolio"
@@ -477,7 +472,6 @@ function HomePage() {
                 className: (homepage_module_default()).footer,
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("h2", {
-                        "data-aos": "fade-up",
                         className: (homepage_module_default()).footer_email,
                         children: "shashankumar@gmail.com"
                     }),
@@ -490,7 +484,6 @@ function HomePage() {
                     }),
                     /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         className: (homepage_module_default()).footer_contact,
-                        "data-aos": "fade-up",
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx((Instagram_default()), {
                                 style: {
