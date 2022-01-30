@@ -2,11 +2,17 @@ import React from 'react'
 import styles from '../../styles/services.module.css'
 import { TopNav } from './Navbar'
 import Link from 'next/link'
+import Aos from 'aos';
+import { useEffect } from 'react';
+import "aos/dist/aos.css"
 
 function Card({image, heading, subheading, description, key, link}){
+    useEffect(() => {
+        Aos.init({duration: 500})
+    }, [])
     return(
-        <Link href={link}>
-        <div className={styles.card} key={key}>
+        <Link href={link} >
+        <div className={styles.card} key={key} data-aos = "fade-right">
          <div className={styles.card_image}>
          <img src = {image}></img>
          </div>

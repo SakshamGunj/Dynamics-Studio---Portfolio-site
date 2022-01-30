@@ -2,12 +2,17 @@ import React, { useEffect, useState } from 'react'
 import styles from '../../styles/portfolio.module.css'
 //import wedding from '../../public/store/wedding_page1.json'
 import { TopNav } from './Navbar'
+import Aos from 'aos';
+import "aos/dist/aos.css"
 import {PortfolioModal, MenuModal} from './Modal'
 import { wedding_url, model_url, nature_url, portrait_url } from '../store/bridal_page1'
 
 
 
 export function IndoorPortfolio({query, weddingurl, natureurl, dataa}) {
+    useEffect(() => {
+        Aos.init({duration: 500})
+    }, [])
     const[openMenu, setOpenMenu] = useState()
     const onGettingOpenMenuHandler = (action) => {
         console.log(action)
@@ -38,6 +43,9 @@ export function IndoorPortfolio({query, weddingurl, natureurl, dataa}) {
     )
 }
 export function WeddingPortfolio({query, weddingurl, natureurl, dataa}) {
+    useEffect(() => {
+        Aos.init({duration: 500})
+    }, [])
     const[openMenu, setOpenMenu] = useState()
     const onGettingOpenMenuHandler = (action) => {
         console.log(action)
@@ -71,6 +79,9 @@ export function WeddingPortfolio({query, weddingurl, natureurl, dataa}) {
     )
 }
 export function CommercialPortfolio({query, weddingurl, natureurl, dataa}) {
+    useEffect(() => {
+        Aos.init({duration: 500})
+    }, [])
     const[openMenu, setOpenMenu] = useState()
     const onGettingOpenMenuHandler = (action) => {
         console.log(action)
@@ -99,6 +110,9 @@ export function CommercialPortfolio({query, weddingurl, natureurl, dataa}) {
     )
 }
 export function ProductPortfolio({query, weddingurl, natureurl, dataa}) {
+    useEffect(() => {
+        Aos.init({duration: 500})
+    }, [])
     const[openMenu, setOpenMenu] = useState()
     const onGettingOpenMenuHandler = (action) => {
         console.log(action)
@@ -128,6 +142,9 @@ export function ProductPortfolio({query, weddingurl, natureurl, dataa}) {
 }
 
 export function Portfolio({query, weddingurl, natureurl, dataa}) {
+    useEffect(() => {
+        Aos.init({duration: 500})
+    }, [])
     const[openMenu, setOpenMenu] = useState()
     const onGettingOpenMenuHandler = (action) => {
         console.log(action)
@@ -145,16 +162,16 @@ export function Portfolio({query, weddingurl, natureurl, dataa}) {
             <h3  key='nature'>commercial</h3>
             </div>
         </div>
-        <div className={styles.portfolio_content1}>
+        <div data-aos = "fade-up" className={styles.portfolio_content1}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
-        <div className={styles.portfolio_content2}>
+        <div data-aos = "fade-up" className={styles.portfolio_content2}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
-        <div className={styles.portfolio_content3}>
+        <div data-aos = "fade-up" className={styles.portfolio_content3}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
-        <div className={styles.portfolio_content4}>
+        <div data-aos = "fade-up" className={styles.portfolio_content4}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
         </main>
