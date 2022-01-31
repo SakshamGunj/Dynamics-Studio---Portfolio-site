@@ -3,7 +3,7 @@
     border: none;
     border-radius: 3rem;
     font-size: 1.5rem;
-    background-color: #ffffff;
+    background: #ffffff;
     cursor: pointer;
     z-index: -10;
     transition: .3s;
@@ -11,6 +11,6 @@
 }
 
 .primary_button:hover{
-    background-color: #222222;
+    background: #222222;
     color: #ffffff;
 }
