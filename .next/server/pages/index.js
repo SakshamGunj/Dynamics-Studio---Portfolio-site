@@ -353,10 +353,7 @@ function HomePage() {
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                         className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_16___default().footer_email),
-                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                            href: "mailto:thedynamicstudioo@gmail.com",
-                            children: "thedynamicstudioo@gmail.com"
-                        })
+                        children: "thedynamicstudioo@gmail.com"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: "footer.jpg"

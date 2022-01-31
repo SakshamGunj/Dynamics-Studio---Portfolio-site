@@ -1,7 +1,8 @@
 .menu_modal{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, #051937, #0f172d, #131523, #13131a, #111111);
+    background-image: linear-gradient(to bottom, #051937, #0f172d, #131523, #13131a, #111111);
+    background-color: #000000;
     z-index: 1000;
     position: absolute;
     top: 0;

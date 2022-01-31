@@ -86,7 +86,7 @@ function HomePage() {
                 <button onClick={onOpenPortfolioHandler} className={styles.portfolio_button}>View Portfolio</button>
             </section>
             <footer className={styles.footer}>
-                <h2 className={styles.footer_email}><Link href='mailto:thedynamicstudioo@gmail.com'>thedynamicstudioo@gmail.com</Link></h2>
+                <h2 className={styles.footer_email}>thedynamicstudioo@gmail.com</h2>
                 <img src = 'footer.jpg' />
                 <h3  className={styles.footer_content_h3}>The Dynamic Studio @2021</h3>
                 <div className = {styles.footer_contact}>
