@@ -97,9 +97,6 @@ function MenuModal() {
         animate: "visible",
         exit: "exit",
         children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                src: "footer.jpg"
-            }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                 className: (_styles_modal_module_css__WEBPACK_IMPORTED_MODULE_5___default().menu_modal_content),
                 children: [

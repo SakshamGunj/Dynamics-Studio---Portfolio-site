@@ -29,7 +29,6 @@ export function MenuModal(){
     const router = useRouter()
     return(
         <motion.div className={styles.menu_modal} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
-         <img src='footer.jpg'></img>
          <div className={styles.menu_modal_content}>
              <Link href='/'><h1>HomePage</h1></Link>
              <Link href='/portfoliowork'><h1 className={styles[router.pathname == '/portfoliowork' && 'link']}>Portfolio</h1></Link>

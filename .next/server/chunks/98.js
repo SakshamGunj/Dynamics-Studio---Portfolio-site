@@ -443,11 +443,6 @@ function Portfolio({ query , weddingurl , natureurl , dataa  }) {
             }
         }
     };
-    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
-        aos__WEBPACK_IMPORTED_MODULE_3___default().init({
-            duration: 500
-        });
-    }, []);
     const { 0: openMenu , 1: setOpenMenu  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)();
     const onGettingOpenMenuHandler = (action)=>{
         console.log(action);
@@ -488,7 +483,6 @@ function Portfolio({ query , weddingurl , natureurl , dataa  }) {
                 ]
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                "data-aos": "fade-up",
                 className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content1),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {

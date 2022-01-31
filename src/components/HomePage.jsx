@@ -20,11 +20,10 @@ function HomePage() {
     const fadein = {
         hidden:{
             opacity: 0,
-            y: '10rem'
+            
         },
         visible:{
             opacity:1,
-            y:'0rem',
             transition:{
                 duration: 0.5
             }

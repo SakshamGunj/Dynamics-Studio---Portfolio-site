@@ -183,12 +183,10 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Mod
 function HomePage() {
     const fadein = {
         hidden: {
-            opacity: 0,
-            y: '10rem'
+            opacity: 0
         },
         visible: {
             opacity: 1,
-            y: '0rem',
             transition: {
                 duration: 0.5
             }

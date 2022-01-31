@@ -238,9 +238,6 @@ export function Portfolio({query, weddingurl, natureurl, dataa}) {
             }
         }
     }
-    useEffect(() => {
-        Aos.init({duration: 500})
-    }, [])
     const[openMenu, setOpenMenu] = useState()
     const onGettingOpenMenuHandler = (action) => {
         console.log(action)
@@ -258,7 +255,7 @@ export function Portfolio({query, weddingurl, natureurl, dataa}) {
             <h3  key='nature'>commercial</h3>
             </div>
         </div>
-        <div data-aos = "fade-up" className={styles.portfolio_content1}>
+        <div className={styles.portfolio_content1}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
         <div data-aos = "fade-up" className={styles.portfolio_content2}>
