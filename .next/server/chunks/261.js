@@ -232,7 +232,7 @@ function TopNav(props) {
                 ]
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_utilscomponents_Button__WEBPACK_IMPORTED_MODULE_2__/* .PrimaryButton */ .K, {
-                content: "Get in touch"
+                content: "Contact"
             })
         ]
     }));

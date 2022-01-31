@@ -26,7 +26,7 @@ export function TopNav(props){
             {menu == true && <button className={styles['primary_round_button']} onClick={menuCloseHandler}><CloseIcon style={{fontSize: '3rem', }} /></button>}
             {menu == false && <button className={styles['primary_round_button']} onClick={menuOpenHandler}><MenuIcon style={{fontSize: '3rem', }} /></button>}
         </div>
-         <PrimaryButton content='Get in touch' />
+         <PrimaryButton content='Contact' />
     </nav>
     )
 }
