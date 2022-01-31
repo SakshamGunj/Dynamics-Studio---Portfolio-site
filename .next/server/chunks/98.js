@@ -177,16 +177,16 @@ function WeddingPortfolio({ query , weddingurl , natureurl , dataa  }) {
         setOpenMenu(action);
     };
     return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_4__.motion.div, {
-        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().main),
+        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default())[openMenu ? 'modal_main' : 'main'],
         variants: fadein,
         initial: "hidden",
         animate: "visible",
         exit: "exit",
         children: [
+            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
+            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Navbar__WEBPACK_IMPORTED_MODULE_2__/* .TopNav */ .t, {
                 OpenMenu: onGettingOpenMenuHandler
-            }),
-            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                 className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_heading),
@@ -280,16 +280,16 @@ function CommercialPortfolio({ query , weddingurl , natureurl , dataa  }) {
         setOpenMenu(action);
     };
     return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_4__.motion.div, {
-        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().main),
+        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default())[openMenu ? 'modal_main' : 'main'],
         variants: fadein,
         initial: "hidden",
         animate: "visible",
         exit: "exit",
         children: [
+            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
+            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Navbar__WEBPACK_IMPORTED_MODULE_2__/* .TopNav */ .t, {
                 OpenMenu: onGettingOpenMenuHandler
-            }),
-            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_heading),
@@ -367,16 +367,16 @@ function ProductPortfolio({ query , weddingurl , natureurl , dataa  }) {
         setOpenMenu(action);
     };
     return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_4__.motion.div, {
-        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().main),
+        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default())[openMenu ? 'modal_main' : 'main'],
         variants: fadein,
         initial: "hidden",
         animate: "visible",
         exit: "exit",
         children: [
+            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
+            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Navbar__WEBPACK_IMPORTED_MODULE_2__/* .TopNav */ .t, {
                 OpenMenu: onGettingOpenMenuHandler
-            }),
-            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_heading),
@@ -449,16 +449,16 @@ function Portfolio({ query , weddingurl , natureurl , dataa  }) {
         setOpenMenu(action);
     };
     return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_4__.motion.div, {
-        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().main),
+        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default())[openMenu ? 'modal_main' : 'main'],
         variants: fadein,
         initial: "hidden",
         animate: "visible",
         exit: "exit",
         children: [
+            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
+            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Navbar__WEBPACK_IMPORTED_MODULE_2__/* .TopNav */ .t, {
                 OpenMenu: onGettingOpenMenuHandler
-            }),
-            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                 className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_heading),

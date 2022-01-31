@@ -91,9 +91,9 @@ export function WeddingPortfolio({query, weddingurl, natureurl, dataa}) {
         setOpenMenu(action)
     }
     return (
-        <motion.div className={styles.main} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
-        <TopNav OpenMenu = {onGettingOpenMenuHandler} />
+        <motion.div className={styles[openMenu ? 'modal_main':'main']} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
         {openMenu && <MenuModal />}
+        <TopNav OpenMenu = {onGettingOpenMenuHandler} />
         <div className={styles.portfolio_heading}>
             <h2 key='Wedding'>wedding</h2>
             <div className = {styles.wedding_options}>
@@ -146,9 +146,9 @@ export function CommercialPortfolio({query, weddingurl, natureurl, dataa}) {
         setOpenMenu(action)
     }
     return (
-        <motion.div className={styles.main} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
-        <TopNav OpenMenu = {onGettingOpenMenuHandler} />
+        <motion.div className={styles[openMenu ? 'modal_main':'main']} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
         {openMenu && <MenuModal />}
+        <TopNav OpenMenu = {onGettingOpenMenuHandler} />
         <div className={styles.portfolio_heading}>
             <h2  key='Indoor'>commercial</h2>
         </div>
@@ -196,9 +196,10 @@ export function ProductPortfolio({query, weddingurl, natureurl, dataa}) {
         setOpenMenu(action)
     }
     return (
-        <motion.div className={styles.main} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
-        <TopNav OpenMenu = {onGettingOpenMenuHandler} />
+        <motion.div className={styles[openMenu ? 'modal_main':'main']} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
         {openMenu && <MenuModal />}
+        <TopNav OpenMenu = {onGettingOpenMenuHandler} />
+
         <div className={styles.portfolio_heading}>
             <h2  key='Indoor'>product</h2>
         </div>
@@ -244,9 +245,9 @@ export function Portfolio({query, weddingurl, natureurl, dataa}) {
         setOpenMenu(action)
     }
     return (
-        <motion.div className={styles.main} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
-        <TopNav OpenMenu = {onGettingOpenMenuHandler} />
+        <motion.div className={styles[openMenu ? 'modal_main':'main']} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
         {openMenu && <MenuModal />}
+        <TopNav OpenMenu = {onGettingOpenMenuHandler} />
         <div className={styles.portfolio_heading}>
             <h2 key='Wedding'>portfolio</h2>
             <div className = {styles.wedding_options}>
