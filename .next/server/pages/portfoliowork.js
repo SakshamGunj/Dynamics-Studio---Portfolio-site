@@ -6,8 +6,9 @@ exports.ids = [480];
 exports.modules = {
 
 /***/ 1819:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__) => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps),
@@ -19,6 +20,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _src_store_bridal_page1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4449);
 /* harmony import */ var _src_components_IndoorPortfolio__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7098);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_src_components_IndoorPortfolio__WEBPACK_IMPORTED_MODULE_3__]);
+_src_components_IndoorPortfolio__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? await __webpack_async_dependencies__ : __webpack_async_dependencies__)[0];
 
 
 
@@ -38,6 +41,7 @@ async function getStaticProps({}) {
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (index);
 
+});
 
 /***/ }),
 
@@ -199,6 +203,13 @@ module.exports = require("react");
 /***/ ((module) => {
 
 module.exports = require("react/jsx-runtime");
+
+/***/ }),
+
+/***/ 6197:
+/***/ ((module) => {
+
+module.exports = import("framer-motion");;
 
 /***/ })
 

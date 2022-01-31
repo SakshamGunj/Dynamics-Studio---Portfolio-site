@@ -3,6 +3,7 @@ import styles from '../../styles/services.module.css'
 import { TopNav } from './Navbar'
 import Link from 'next/link'
 import Aos from 'aos';
+
 import { useEffect } from 'react';
 import "aos/dist/aos.css"
 

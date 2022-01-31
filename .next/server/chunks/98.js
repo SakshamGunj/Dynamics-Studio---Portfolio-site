@@ -22,9 +22,10 @@ module.exports = {
 /***/ }),
 
 /***/ 7098:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__) => {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "OL": () => (/* binding */ IndoorPortfolio),
 /* harmony export */   "NH": () => (/* binding */ WeddingPortfolio),
@@ -36,13 +37,16 @@ module.exports = {
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1001);
-/* harmony import */ var _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1001);
+/* harmony import */ var _styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6446);
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9783);
 /* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9929);
-/* harmony import */ var _store_bridal_page1__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(4449);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6197);
+/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9929);
+/* harmony import */ var _store_bridal_page1__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4449);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Modal__WEBPACK_IMPORTED_MODULE_5__, framer_motion__WEBPACK_IMPORTED_MODULE_4__]);
+([_Modal__WEBPACK_IMPORTED_MODULE_5__, framer_motion__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? await __webpack_async_dependencies__ : __webpack_async_dependencies__);
 
 
 
@@ -52,7 +56,27 @@ module.exports = {
 
 
 
+
 function IndoorPortfolio({ query , weddingurl , natureurl , dataa  }) {
+    const fadein = {
+        hidden: {
+            opacity: 0,
+            y: '10rem'
+        },
+        visible: {
+            opacity: 1,
+            y: '0rem',
+            transition: {
+                duration: 0.5
+            }
+        },
+        exit: {
+            opacity: 0,
+            transition: {
+                duration: 1
+            }
+        }
+    };
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         aos__WEBPACK_IMPORTED_MODULE_3___default().init({
             duration: 500
@@ -64,53 +88,57 @@ function IndoorPortfolio({ query , weddingurl , natureurl , dataa  }) {
         setOpenMenu(action);
     };
     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("main", {
-            className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default())[openMenu ? 'modal_main' : 'main'],
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_4__.motion.div, {
+            className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default())[openMenu ? 'modal_main' : 'main'],
+            variants: fadein,
+            initial: "hidden",
+            animate: "visible",
+            exit: "exit",
             children: [
-                openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_4__/* .MenuModal */ .H, {
+                openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Navbar__WEBPACK_IMPORTED_MODULE_2__/* .TopNav */ .t, {
                     OpenMenu: onGettingOpenMenuHandler
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_heading),
+                    className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_heading),
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                         children: "indoor"
                     }, "Indoor")
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content1),
+                    className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content1),
                     children: dataa.map((u)=>{
                         return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                             src: u,
-                            className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                            className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                         }));
                     })
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content2),
+                    className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content2),
                     children: dataa.map((u)=>{
                         return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                             src: u,
-                            className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                            className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                         }));
                     })
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content3),
+                    className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content3),
                     children: dataa.map((u)=>{
                         return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                             src: u,
-                            className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                            className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                         }));
                     })
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content4),
+                    className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content4),
                     children: dataa.map((u)=>{
                         return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                             src: u,
-                            className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                            className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                         }));
                     })
                 })
@@ -119,6 +147,25 @@ function IndoorPortfolio({ query , weddingurl , natureurl , dataa  }) {
     }));
 }
 function WeddingPortfolio({ query , weddingurl , natureurl , dataa  }) {
+    const fadein = {
+        hidden: {
+            opacity: 0,
+            y: '10rem'
+        },
+        visible: {
+            opacity: 1,
+            y: '0rem',
+            transition: {
+                duration: 0.5
+            }
+        },
+        exit: {
+            opacity: 0,
+            transition: {
+                duration: 1
+            }
+        }
+    };
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         aos__WEBPACK_IMPORTED_MODULE_3___default().init({
             duration: 500
@@ -129,22 +176,26 @@ function WeddingPortfolio({ query , weddingurl , natureurl , dataa  }) {
         console.log(action);
         setOpenMenu(action);
     };
-    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("main", {
-        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().main),
+    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_4__.motion.div, {
+        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().main),
+        variants: fadein,
+        initial: "hidden",
+        animate: "visible",
+        exit: "exit",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Navbar__WEBPACK_IMPORTED_MODULE_2__/* .TopNav */ .t, {
                 OpenMenu: onGettingOpenMenuHandler
             }),
-            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_4__/* .MenuModal */ .H, {
+            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_heading),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_heading),
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                         children: "wedding"
                     }, "Wedding"),
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().wedding_options),
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().wedding_options),
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
                                 children: "Pre wedding"
@@ -160,38 +211,38 @@ function WeddingPortfolio({ query , weddingurl , natureurl , dataa  }) {
                 ]
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content1),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content1),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content2),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content2),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content3),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content3),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content4),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content4),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             })
@@ -199,6 +250,25 @@ function WeddingPortfolio({ query , weddingurl , natureurl , dataa  }) {
     }));
 }
 function CommercialPortfolio({ query , weddingurl , natureurl , dataa  }) {
+    const fadein = {
+        hidden: {
+            opacity: 0,
+            y: '10rem'
+        },
+        visible: {
+            opacity: 1,
+            y: '0rem',
+            transition: {
+                duration: 0.5
+            }
+        },
+        exit: {
+            opacity: 0,
+            transition: {
+                duration: 1
+            }
+        }
+    };
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         aos__WEBPACK_IMPORTED_MODULE_3___default().init({
             duration: 500
@@ -209,53 +279,57 @@ function CommercialPortfolio({ query , weddingurl , natureurl , dataa  }) {
         console.log(action);
         setOpenMenu(action);
     };
-    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("main", {
-        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().main),
+    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_4__.motion.div, {
+        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().main),
+        variants: fadein,
+        initial: "hidden",
+        animate: "visible",
+        exit: "exit",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Navbar__WEBPACK_IMPORTED_MODULE_2__/* .TopNav */ .t, {
                 OpenMenu: onGettingOpenMenuHandler
             }),
-            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_4__/* .MenuModal */ .H, {
+            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_heading),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_heading),
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                     children: "commercial"
                 }, "Indoor")
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content1),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content1),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content2),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content2),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content3),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content3),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content4),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content4),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             })
@@ -263,6 +337,25 @@ function CommercialPortfolio({ query , weddingurl , natureurl , dataa  }) {
     }));
 }
 function ProductPortfolio({ query , weddingurl , natureurl , dataa  }) {
+    const fadein = {
+        hidden: {
+            opacity: 0,
+            y: '10rem'
+        },
+        visible: {
+            opacity: 1,
+            y: '0rem',
+            transition: {
+                duration: 0.5
+            }
+        },
+        exit: {
+            opacity: 0,
+            transition: {
+                duration: 1
+            }
+        }
+    };
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         aos__WEBPACK_IMPORTED_MODULE_3___default().init({
             duration: 500
@@ -273,53 +366,57 @@ function ProductPortfolio({ query , weddingurl , natureurl , dataa  }) {
         console.log(action);
         setOpenMenu(action);
     };
-    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("main", {
-        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().main),
+    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_4__.motion.div, {
+        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().main),
+        variants: fadein,
+        initial: "hidden",
+        animate: "visible",
+        exit: "exit",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Navbar__WEBPACK_IMPORTED_MODULE_2__/* .TopNav */ .t, {
                 OpenMenu: onGettingOpenMenuHandler
             }),
-            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_4__/* .MenuModal */ .H, {
+            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_heading),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_heading),
                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                     children: "product"
                 }, "Indoor")
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content1),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content1),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content2),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content2),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content3),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content3),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content4),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content4),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             })
@@ -327,6 +424,25 @@ function ProductPortfolio({ query , weddingurl , natureurl , dataa  }) {
     }));
 }
 function Portfolio({ query , weddingurl , natureurl , dataa  }) {
+    const fadein = {
+        hidden: {
+            opacity: 0,
+            y: '10rem'
+        },
+        visible: {
+            opacity: 1,
+            y: '0rem',
+            transition: {
+                duration: 0.5
+            }
+        },
+        exit: {
+            opacity: 0,
+            transition: {
+                duration: 1
+            }
+        }
+    };
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         aos__WEBPACK_IMPORTED_MODULE_3___default().init({
             duration: 500
@@ -337,22 +453,26 @@ function Portfolio({ query , weddingurl , natureurl , dataa  }) {
         console.log(action);
         setOpenMenu(action);
     };
-    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("main", {
-        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().main),
+    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_4__.motion.div, {
+        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().main),
+        variants: fadein,
+        initial: "hidden",
+        animate: "visible",
+        exit: "exit",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Navbar__WEBPACK_IMPORTED_MODULE_2__/* .TopNav */ .t, {
                 OpenMenu: onGettingOpenMenuHandler
             }),
-            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_4__/* .MenuModal */ .H, {
+            openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_5__/* .MenuModal */ .H, {
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_heading),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_heading),
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
                         children: "portfolio"
                     }, "Wedding"),
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().wedding_options),
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().wedding_options),
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
                                 children: "wedding"
@@ -369,41 +489,41 @@ function Portfolio({ query , weddingurl , natureurl , dataa  }) {
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 "data-aos": "fade-up",
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content1),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content1),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 "data-aos": "fade-up",
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content2),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content2),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 "data-aos": "fade-up",
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content3),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content3),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                 "data-aos": "fade-up",
-                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_content4),
+                className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content4),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: u,
-                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_6___default().portfolio_image)
+                        className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_image)
                     }));
                 })
             })
@@ -411,6 +531,7 @@ function Portfolio({ query , weddingurl , natureurl , dataa  }) {
     }));
 }
 
+});
 
 /***/ }),
 

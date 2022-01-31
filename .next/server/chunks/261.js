@@ -42,9 +42,10 @@ module.exports = {
 /***/ }),
 
 /***/ 9929:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__) => {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "H": () => (/* binding */ MenuModal)
 /* harmony export */ });
@@ -52,11 +53,15 @@ module.exports = {
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_modal_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1029);
-/* harmony import */ var _styles_modal_module_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_modal_module_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles_modal_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1029);
+/* harmony import */ var _styles_modal_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_modal_module_css__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1664);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1853);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6197);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1853);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([framer_motion__WEBPACK_IMPORTED_MODULE_3__]);
+framer_motion__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__.then ? await __webpack_async_dependencies__ : __webpack_async_dependencies__)[0];
+
 
 
 
@@ -64,16 +69,39 @@ module.exports = {
 
 
 function MenuModal() {
+    const fadein = {
+        hidden: {
+            opacity: 0,
+            y: '10rem'
+        },
+        visible: {
+            opacity: 1,
+            y: '0rem',
+            transition: {
+                duration: 0.5
+            }
+        },
+        exit: {
+            opacity: 0,
+            transition: {
+                duration: 1
+            }
+        }
+    };
     const { 0: openMenu , 1: setOpenMenu  } = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
-    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_3__.useRouter)();
-    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: (_styles_modal_module_css__WEBPACK_IMPORTED_MODULE_4___default().menu_modal),
+    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_4__.useRouter)();
+    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
+        className: (_styles_modal_module_css__WEBPACK_IMPORTED_MODULE_5___default().menu_modal),
+        variants: fadein,
+        initial: "hidden",
+        animate: "visible",
+        exit: "exit",
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                 src: "footer.jpg"
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: (_styles_modal_module_css__WEBPACK_IMPORTED_MODULE_4___default().menu_modal_content),
+                className: (_styles_modal_module_css__WEBPACK_IMPORTED_MODULE_5___default().menu_modal_content),
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
                         href: "/",
@@ -84,7 +112,7 @@ function MenuModal() {
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
                         href: "/portfoliowork",
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
-                            className: (_styles_modal_module_css__WEBPACK_IMPORTED_MODULE_4___default())[router.pathname == '/portfoliowork' && 'link'],
+                            className: (_styles_modal_module_css__WEBPACK_IMPORTED_MODULE_5___default())[router.pathname == '/portfoliowork' && 'link'],
                             children: "Portfolio"
                         })
                     }),
@@ -97,7 +125,7 @@ function MenuModal() {
                 ]
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: (_styles_modal_module_css__WEBPACK_IMPORTED_MODULE_4___default().menu_modal_content2),
+                className: (_styles_modal_module_css__WEBPACK_IMPORTED_MODULE_5___default().menu_modal_content2),
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(next_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
                         href: "/portfoliowork/wedding",
@@ -129,6 +157,7 @@ function MenuModal() {
     }));
 }
 
+});
 
 /***/ }),
 

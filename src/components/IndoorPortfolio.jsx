@@ -4,12 +4,32 @@ import styles from '../../styles/portfolio.module.css'
 import { TopNav } from './Navbar'
 import Aos from 'aos';
 import "aos/dist/aos.css"
+import { motion } from "framer-motion"
 import {PortfolioModal, MenuModal} from './Modal'
 import { wedding_url, model_url, nature_url, portrait_url } from '../store/bridal_page1'
 
 
 
 export function IndoorPortfolio({query, weddingurl, natureurl, dataa}) {
+    const fadein = {
+        hidden:{
+            opacity: 0,
+            y: '10rem'
+        },
+        visible:{
+            opacity:1,
+            y:'0rem',
+            transition:{
+                duration: 0.5
+            }
+        },
+        exit:{
+            opacity:0,
+            transition:{
+                duration: 1
+            }
+        }
+    }
     useEffect(() => {
         Aos.init({duration: 500})
     }, [])
@@ -20,7 +40,7 @@ export function IndoorPortfolio({query, weddingurl, natureurl, dataa}) {
     }
     return (
         <>
-        <main className={styles[openMenu ? 'modal_main':'main']}>
+        <motion.div className={styles[openMenu ? 'modal_main':'main']} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
         {openMenu && <MenuModal />}
         <TopNav OpenMenu = {onGettingOpenMenuHandler} />
         <div className={styles.portfolio_heading}>
@@ -38,11 +58,30 @@ export function IndoorPortfolio({query, weddingurl, natureurl, dataa}) {
         <div className={styles.portfolio_content4}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
-        </main>
+        </motion.div>
         </>
     )
 }
 export function WeddingPortfolio({query, weddingurl, natureurl, dataa}) {
+    const fadein = {
+        hidden:{
+            opacity: 0,
+            y: '10rem'
+        },
+        visible:{
+            opacity:1,
+            y:'0rem',
+            transition:{
+                duration: 0.5
+            }
+        },
+        exit:{
+            opacity:0,
+            transition:{
+                duration: 1
+            }
+        }
+    }
     useEffect(() => {
         Aos.init({duration: 500})
     }, [])
@@ -52,7 +91,7 @@ export function WeddingPortfolio({query, weddingurl, natureurl, dataa}) {
         setOpenMenu(action)
     }
     return (
-        <main className={styles.main}>
+        <motion.div className={styles.main} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
         <TopNav OpenMenu = {onGettingOpenMenuHandler} />
         {openMenu && <MenuModal />}
         <div className={styles.portfolio_heading}>
@@ -75,10 +114,29 @@ export function WeddingPortfolio({query, weddingurl, natureurl, dataa}) {
         <div className={styles.portfolio_content4}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
-        </main>
+        </motion.div>
     )
 }
 export function CommercialPortfolio({query, weddingurl, natureurl, dataa}) {
+    const fadein = {
+        hidden:{
+            opacity: 0,
+            y: '10rem'
+        },
+        visible:{
+            opacity:1,
+            y:'0rem',
+            transition:{
+                duration: 0.5
+            }
+        },
+        exit:{
+            opacity:0,
+            transition:{
+                duration: 1
+            }
+        }
+    }
     useEffect(() => {
         Aos.init({duration: 500})
     }, [])
@@ -88,7 +146,7 @@ export function CommercialPortfolio({query, weddingurl, natureurl, dataa}) {
         setOpenMenu(action)
     }
     return (
-        <main className={styles.main}>
+        <motion.div className={styles.main} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
         <TopNav OpenMenu = {onGettingOpenMenuHandler} />
         {openMenu && <MenuModal />}
         <div className={styles.portfolio_heading}>
@@ -106,10 +164,29 @@ export function CommercialPortfolio({query, weddingurl, natureurl, dataa}) {
         <div className={styles.portfolio_content4}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
-        </main>
+        </motion.div>
     )
 }
 export function ProductPortfolio({query, weddingurl, natureurl, dataa}) {
+    const fadein = {
+        hidden:{
+            opacity: 0,
+            y: '10rem'
+        },
+        visible:{
+            opacity:1,
+            y:'0rem',
+            transition:{
+                duration: 0.5
+            }
+        },
+        exit:{
+            opacity:0,
+            transition:{
+                duration: 1
+            }
+        }
+    }
     useEffect(() => {
         Aos.init({duration: 500})
     }, [])
@@ -119,7 +196,7 @@ export function ProductPortfolio({query, weddingurl, natureurl, dataa}) {
         setOpenMenu(action)
     }
     return (
-        <main className={styles.main}>
+        <motion.div className={styles.main} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
         <TopNav OpenMenu = {onGettingOpenMenuHandler} />
         {openMenu && <MenuModal />}
         <div className={styles.portfolio_heading}>
@@ -137,11 +214,30 @@ export function ProductPortfolio({query, weddingurl, natureurl, dataa}) {
         <div className={styles.portfolio_content4}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
-        </main>
+        </motion.div>
     )
 }
 
 export function Portfolio({query, weddingurl, natureurl, dataa}) {
+    const fadein = {
+        hidden:{
+            opacity: 0,
+            y: '10rem'
+        },
+        visible:{
+            opacity:1,
+            y:'0rem',
+            transition:{
+                duration: 0.5
+            }
+        },
+        exit:{
+            opacity:0,
+            transition:{
+                duration: 1
+            }
+        }
+    }
     useEffect(() => {
         Aos.init({duration: 500})
     }, [])
@@ -151,7 +247,7 @@ export function Portfolio({query, weddingurl, natureurl, dataa}) {
         setOpenMenu(action)
     }
     return (
-        <main className={styles.main}>
+        <motion.div className={styles.main} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
         <TopNav OpenMenu = {onGettingOpenMenuHandler} />
         {openMenu && <MenuModal />}
         <div className={styles.portfolio_heading}>
@@ -174,7 +270,7 @@ export function Portfolio({query, weddingurl, natureurl, dataa}) {
         <div data-aos = "fade-up" className={styles.portfolio_content4}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
-        </main>
+        </motion.div>
     )
 }
 
