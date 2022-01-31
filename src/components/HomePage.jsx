@@ -3,6 +3,7 @@ import styles from '../../styles/homepage.module.css'
 import { MenuModal } from './Modal';
 import { PrimaryButton } from '../utilscomponents/Button';
 import { TopNav, RightNav } from './Navbar';
+import Link from 'next/link'
 import Aos from 'aos';
 import "aos/dist/aos.css"
 import { useRouter } from 'next/router';
@@ -85,9 +86,9 @@ function HomePage() {
                 <button onClick={onOpenPortfolioHandler} className={styles.portfolio_button}>View Portfolio</button>
             </section>
             <footer className={styles.footer}>
-                <h2 className={styles.footer_email}>shashankumar@gmail.com</h2>
+                <h2 className={styles.footer_email}><Link href='mailto:thedynamicstudioo@gmail.com'>thedynamicstudioo@gmail.com</Link></h2>
                 <img src = 'footer.jpg' />
-                <h3  className={styles.footer_content_h3}>The Dynamics Studio @2021</h3>
+                <h3  className={styles.footer_content_h3}>The Dynamic Studio @2021</h3>
                 <div className = {styles.footer_contact}>
                 <InstagramIcon style = {{fontSize: '3rem', fill: 'white'}} />
         <FacebookIcon style = {{fontSize: '3rem', fill: 'white'}} />

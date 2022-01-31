@@ -244,25 +244,25 @@ function RightNav() {
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_4___default()), {
                 style: {
                     fontSize: '3rem',
-                    fill: 'white'
+                    fill: '#ffffff'
                 }
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_material_ui_icons_Facebook__WEBPACK_IMPORTED_MODULE_5___default()), {
                 style: {
                     fontSize: '3rem',
-                    fill: 'white'
+                    fill: '#ffffff'
                 }
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_material_ui_icons_Twitter__WEBPACK_IMPORTED_MODULE_8___default()), {
                 style: {
                     fontSize: '3rem',
-                    fill: 'white'
+                    fill: '#ffffff'
                 }
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_material_ui_icons_WhatsApp__WEBPACK_IMPORTED_MODULE_7___default()), {
                 style: {
                     fontSize: '3rem',
-                    fill: 'white'
+                    fill: '#ffffff'
                 }
             })
         ]

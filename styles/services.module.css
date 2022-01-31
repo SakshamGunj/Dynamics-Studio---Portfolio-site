@@ -1,5 +1,5 @@
 .services{
-    background-color: black;
+    background-color: #000000;
     display: grid;
     grid-template-rows: min-content min-content;
     grid-template-columns: repeat(12, minmax(min-content, 1fr));
@@ -14,7 +14,7 @@
     display: grid;
 }
 .servicesHeading h3{
-    color: rgb(124, 124, 124);
+    color: #7c7c7c;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 3.5rem;
@@ -29,7 +29,7 @@
 }
 .card{
     height: min-content;
-    background-color: rgba(0, 255, 255, 0);
+    background-color: #00ffff00;
     display: grid;
     grid-template-rows: 17rem 30rem;
     grid-template-columns: 0.35fr 1.65fr;
@@ -53,12 +53,12 @@
 }
 .card_heading h2{
     text-transform: uppercase;
-    color: white;
+    color: #ffffff;
     font-size: 2.7rem;
 }
 .card_heading h3{
     text-transform: uppercase;
-    color: gray;
+    color: #808080;
     font-size: 1.2rem;
     transform: translate(0rem, 4rem);
     justify-self: flex-end;
@@ -72,7 +72,7 @@
     grid-template-rows: 2fr 1fr;
 }
 .card_content h2{
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 500;
@@ -81,7 +81,7 @@
     align-self: center;
 }
 .card_content h3{
-    color: rgb(124, 124, 124);
+    color: #7c7c7c;
     font-size: 1.8rem;
     font-weight: 500;
     padding-left: 3rem;
@@ -160,13 +160,13 @@
     }
     .card_heading h2{
         text-transform: uppercase;
-        color: white;
+        color: #ffffff;
         font-size: 2.5rem;
         font-weight: bolder;
     }
     .card_heading h3{
         text-transform: uppercase;
-        color: gray;
+        color: #808080;
         font-size: 1.4rem;
         transform: translate(0rem, 4rem);
         justify-self: flex-end;
@@ -180,7 +180,7 @@
         display: grid;
     }
     .card_content h3{
-        color: rgb(124, 124, 124);
+        color: #7c7c7c;
         font-size: 2rem;
         font-weight: 500;
         padding-left: 2rem;
@@ -201,7 +201,7 @@
     }
     .card_heading h2{
         text-transform: uppercase;
-        color: white;
+        color: #ffffff;
         font-size: 2.46rem;
         font-weight: bolder;
         transform: translateY(0.5rem);

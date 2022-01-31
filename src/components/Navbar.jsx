@@ -34,10 +34,10 @@ export function TopNav(props){
 export function RightNav(){
     return(
         <nav className = {styles.right_nav}>
-        <InstagramIcon style = {{fontSize: '3rem', fill: 'white'}} />
-        <FacebookIcon style = {{fontSize: '3rem', fill: 'white'}} />
-        <TwitterIcon style = {{fontSize: '3rem', fill: 'white'}} />
-        <WhatsAppIcon style = {{fontSize: '3rem', fill: 'white'}} />
+        <InstagramIcon style = {{fontSize: '3rem', fill: '#ffffff'}} />
+        <FacebookIcon style = {{fontSize: '3rem', fill: '#ffffff'}} />
+        <TwitterIcon style = {{fontSize: '3rem', fill: '#ffffff'}} />
+        <WhatsAppIcon style = {{fontSize: '3rem', fill: '#ffffff'}} />
        </nav>
     )
 }

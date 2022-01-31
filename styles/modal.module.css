@@ -1,7 +1,7 @@
 .menu_modal{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to bottom, #051937, #0f172d, #131523, #13131a, #111111);
+    background: linear-gradient(to bottom, #051937, #0f172d, #131523, #13131a, #111111);
     z-index: 1000;
     position: absolute;
     top: 0;
@@ -49,17 +49,17 @@
   overflow-x: hidden;
 }
 .menu_modal_content h1{
-  color: gray;
+  color: #808080;
   font-size: 4.5rem;
   cursor: pointer;
 }
 .link{
-  color: gray;
+  color: #808080;
   font-size: 4.5rem;
   cursor: pointer;
 }
 .menu_modal_content2 h2{
-  color: gray;
+  color: #808080;
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 1.3rem;
@@ -94,7 +94,7 @@
     
   }
   .menu_modal_content2 h2{
-    color: gray;
+    color: #808080;
     font-weight: 400;
     letter-spacing: 2px;
     font-size: 1.8rem;
