@@ -2,6 +2,7 @@ import React, { useEffect, useState,  } from 'react'
 import styles from '../../styles/homepage.module.css'
 import { MenuModal } from './Modal';
 import { PrimaryButton } from '../utilscomponents/Button';
+import {motion} from 'framer-motion'
 import { TopNav, RightNav } from './Navbar';
 import Aos from 'aos';
 import "aos/dist/aos.css"
@@ -13,9 +14,29 @@ import FacebookIcon from '@material-ui/icons/Facebook'
 import CloseIcon from "@material-ui/icons/Close";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp" 
 import TwitterIcon from '@material-ui/icons/Twitter'
+import { motion } from 'framer-motion';
 
 
 function HomePage() {
+    const fadein = {
+        hidden:{
+            opacity: 0,
+            y: '10rem'
+        },
+        visible:{
+            opacity:1,
+            y:'0rem',
+            transition:{
+                duration: 0.5
+            }
+        },
+        exit:{
+            opacity:0,
+            transition:{
+                duration: 1
+            }
+        }
+    }
     useEffect(() => {
         Aos.init({duration: 500})
     }, [])
@@ -29,7 +50,7 @@ function HomePage() {
         setOpenMenu(action)
     }
     return (
-        <main className={styles[openMenu == true? 'menu_main':'main']}>
+        <motion.div className={styles[openMenu == true? 'menu_main':'main']} variants={fadein} initial = "hidden" animate = "visible" exit = "exit">
            {openMenu && <MenuModal />}
             <TopNav OpenMenu = {onGettingOpenMenuHandler} />
             <RightNav />
@@ -76,7 +97,7 @@ function HomePage() {
         <WhatsAppIcon style = {{fontSize: '3rem', fill: 'white'}} />
                 </div>
             </footer>
-        </main>
+        </motion.div>
     )
 }
 
