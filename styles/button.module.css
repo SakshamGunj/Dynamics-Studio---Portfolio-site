@@ -1,18 +1,21 @@
-.primary_button{
-    padding: 1.5rem 3rem 1.5rem 3rem;
-    border: none;
-    border-radius: 3rem;
-    font-size: 1.5rem;
-    background: rgb(85, 23, 201);
-    cursor: pointer;
-    z-index: -10;
-    transition: .3s;
-    font-weight: 600;
-
+@media (prefers-color-scheme: dark){
+    .primary_button{
+        padding: 1.5rem 3rem 1.5rem 3rem;
+        border: none;
+        border-radius: 3rem;
+        font-size: 1.5rem;
+        background: rgb(255, 255, 255);
+        cursor: pointer;
+        z-index: -10;
+        transition: .3s;
+        font-weight: 600;
+    
+    }
+    
+    
+    .primary_button:hover{
+        background: #222222;
+        color: #fff;
+    }
 }
 
-
-.primary_button:hover{
-    background: #222222;
-    color: #fff;
-}
