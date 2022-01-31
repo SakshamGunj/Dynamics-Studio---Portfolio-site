@@ -492,7 +492,6 @@ function Portfolio({ query , weddingurl , natureurl , dataa  }) {
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                "data-aos": "fade-up",
                 className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content2),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
@@ -502,7 +501,6 @@ function Portfolio({ query , weddingurl , natureurl , dataa  }) {
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                "data-aos": "fade-up",
                 className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content3),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
@@ -512,7 +510,6 @@ function Portfolio({ query , weddingurl , natureurl , dataa  }) {
                 })
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                "data-aos": "fade-up",
                 className: (_styles_portfolio_module_css__WEBPACK_IMPORTED_MODULE_7___default().portfolio_content4),
                 children: dataa.map((u)=>{
                     return(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {

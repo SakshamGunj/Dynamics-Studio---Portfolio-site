@@ -259,13 +259,13 @@ export function Portfolio({query, weddingurl, natureurl, dataa}) {
         <div className={styles.portfolio_content1}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
-        <div data-aos = "fade-up" className={styles.portfolio_content2}>
+        <div  className={styles.portfolio_content2}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
-        <div data-aos = "fade-up" className={styles.portfolio_content3}>
+        <div  className={styles.portfolio_content3}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
-        <div data-aos = "fade-up" className={styles.portfolio_content4}>
+        <div  className={styles.portfolio_content4}>
          {dataa.map((u) => {return <img src = {u} className={styles.portfolio_image} ></img>})}
         </div>
         </motion.div>
