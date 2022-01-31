@@ -139,8 +139,8 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__) => {
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(6210);
-/* harmony import */ var _styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(6210);
+/* harmony import */ var _styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15__);
 /* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9929);
 /* harmony import */ var _utilscomponents_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3863);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6446);
@@ -160,8 +160,10 @@ __webpack_require__.a(module, async (__webpack_handle_async_dependencies__) => {
 /* harmony import */ var _material_ui_icons_WhatsApp__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_WhatsApp__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _material_ui_icons_Twitter__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(2294);
 /* harmony import */ var _material_ui_icons_Twitter__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Twitter__WEBPACK_IMPORTED_MODULE_13__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Modal__WEBPACK_IMPORTED_MODULE_2__]);
-_Modal__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? await __webpack_async_dependencies__ : __webpack_async_dependencies__)[0];
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(6197);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Modal__WEBPACK_IMPORTED_MODULE_2__, framer_motion__WEBPACK_IMPORTED_MODULE_14__]);
+([_Modal__WEBPACK_IMPORTED_MODULE_2__, framer_motion__WEBPACK_IMPORTED_MODULE_14__] = __webpack_async_dependencies__.then ? await __webpack_async_dependencies__ : __webpack_async_dependencies__);
+
 
 
 
@@ -179,6 +181,25 @@ _Modal__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? awa
 
 
 function HomePage() {
+    const fadein = {
+        hidden: {
+            opacity: 0,
+            y: '10rem'
+        },
+        visible: {
+            opacity: 1,
+            y: '0rem',
+            transition: {
+                duration: 0.5
+            }
+        },
+        exit: {
+            opacity: 0,
+            transition: {
+                duration: 1
+            }
+        }
+    };
     (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{
         aos__WEBPACK_IMPORTED_MODULE_5___default().init({
             duration: 500
@@ -193,8 +214,12 @@ function HomePage() {
         console.log(action);
         setOpenMenu(action);
     };
-    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("main", {
-        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default())[openMenu == true ? 'menu_main' : 'main'],
+    return(/*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_14__.motion.div, {
+        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default())[openMenu == true ? 'menu_main' : 'main'],
+        variants: fadein,
+        initial: "hidden",
+        animate: "visible",
+        exit: "exit",
         children: [
             openMenu && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Modal__WEBPACK_IMPORTED_MODULE_2__/* .MenuModal */ .H, {
             }),
@@ -204,20 +229,20 @@ function HomePage() {
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Navbar__WEBPACK_IMPORTED_MODULE_4__/* .RightNav */ .L, {
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("header", {
-                className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().header),
+                className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().header),
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: "big.jpg",
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().large_image)
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().large_image)
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().header_title),
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().header_title),
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h1", {
                             children: "Dynamic"
                         })
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().small_image),
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().small_image),
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                             src: "small-removebg.png"
                         })
@@ -227,36 +252,36 @@ function HomePage() {
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Services__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .Z, {
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
-                className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().article),
+                className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().article),
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().article_image),
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().article_image),
                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                             src: "photographer2.jpg"
                         })
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().article_content),
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().article_content),
                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("article", {
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().article_bold),
+                                    className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().article_bold),
                                     children: "Awkward introduction? Clammy handshake? Nah, let’s go in for a virtual bear hug and a quick two-minute spiel about who I am, because who I am is your new hyper-talented mate – a creative director and visual connoisseur with a background and degree in commercial and photojournalistic photography."
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().article_normal),
+                                    className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().article_normal),
                                     children: "As a multidisciplinary visual creator, I have a keen focus on film and an insatiable obsession with storytelling. I started out shooting weddings, where I learned the mystic and lesser-studied art of making people feel comfortable in front of a camera; from there I branched out into commercial work before founding my own production company, fēlan films (derived from the origin of the word ‘FEELING’...you feel?)."
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().article_normal),
+                                    className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().article_normal),
                                     children: "Collaboration is the lifeblood of the moving image and a large part of why I adore what I do. Our team learned so much through creating content for top-tier clients that we felt downright professorial and accepted our humble duty to share the fēlan genius with the masses. Corduroy jackets and mismatched elbow patches donned, we created Moments in a Minute – a complete guide to creating meaningful, impactful content that grabs people by the eyeballs for sixty seconds and refuses to let go."
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().article_normal),
+                                    className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().article_normal),
                                     children: "I love creating films in Melbourne, Sydney, all over Australia and the rest of the world. However, I also teach, work on live stream events, capture commercial and wedding photography and anything else with a heart that beats to the rhythm of filmmaking. And for the next few months I’m a Byron Bay commercial director, focused on creating awesome content for a dazzling array of clients."
                                 }),
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                    className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().article_normal),
+                                    className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().article_normal),
                                     children: "So that’s Andy in a nutshell. If you want to learn more about me (especially how I ended up inside a gigantic nut), take a peek around the rest of my site."
                                 })
                             ]
@@ -265,55 +290,55 @@ function HomePage() {
                 ]
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
-                className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().photos),
+                className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().photos),
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: "https://images.pexels.com/photos/1229414/pexels-photo-1229414.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().photo1)
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().photo1)
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: "https://images.pexels.com/photos/948185/pexels-photo-948185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().photo2)
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().photo2)
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().photo3)
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().photo3)
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: "https://images.pexels.com/photos/1921168/pexels-photo-1921168.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().photo4)
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().photo4)
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: "https://images.pexels.com/photos/1172207/pexels-photo-1172207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().photo5)
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().photo5)
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: "model3.jpg",
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().photo6)
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().photo6)
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                         onClick: onOpenPortfolioHandler,
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().portfolio_button),
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().portfolio_button),
                         children: "View Portfolio"
                     })
                 ]
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("footer", {
-                className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().footer),
+                className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().footer),
                 children: [
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().footer_email),
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().footer_email),
                         children: "shashankumar@gmail.com"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
                         src: "footer.jpg"
                     }),
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().footer_content_h3),
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().footer_content_h3),
                         children: "The Dynamics Studio @2021"
                     }),
                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_14___default().footer_contact),
+                        className: (_styles_homepage_module_css__WEBPACK_IMPORTED_MODULE_15___default().footer_contact),
                         children: [
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((_material_ui_icons_Instagram__WEBPACK_IMPORTED_MODULE_9___default()), {
                                 style: {

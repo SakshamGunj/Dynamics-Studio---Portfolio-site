@@ -2,7 +2,6 @@ import React, { useEffect, useState,  } from 'react'
 import styles from '../../styles/homepage.module.css'
 import { MenuModal } from './Modal';
 import { PrimaryButton } from '../utilscomponents/Button';
-import {motion} from 'framer-motion'
 import { TopNav, RightNav } from './Navbar';
 import Aos from 'aos';
 import "aos/dist/aos.css"
